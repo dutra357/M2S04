@@ -23,5 +23,14 @@ class Produto {
         this.preco = preco,
         this.quantidade = quantidade;
     }
-    
+
+    vender(qtd) {
+        if(this.quantidade >= qtd) {
+            this.quantidade -= qtd;
+        } else {console.log('Estoque insuficiente.')}
+    }
 }
+
+let produto = new Produto('TV', 100.00, 2)
+produto.vender(1)
+console.log(produto)
