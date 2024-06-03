@@ -1,5 +1,5 @@
 //Card01 - reduce()
-let numeros = [8, 7, 6, 10.0, 20, 21, 33, 99, 97, 101, 6.75, 100];
+let numeros = [8, 7, 6, 10.0, 20, 21, 33, 99];
 
 let total = numeros.reduce(function(total, numero){
     return total + numero;
@@ -17,7 +17,10 @@ let pares = numeros.filter((element) => {
 
 
 //Card03 - map()
-
+let novoArray = numeros.map((element) => {
+    return element * element;
+})
+//console.log(novoArray)
 
 
 //Card04 - Classe Produto
