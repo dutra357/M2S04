@@ -41,9 +41,18 @@ class Produto {
     mostrarEstoque() {
         console.log(`O produto '${this.nome}' possui ${this.quantidade} unidades disponíveis`)
     }
+
+    atualizarPreco(preco) {
+        this.preco = preco;
+    }
 }
 
 let produto = new Produto('TV', 100.00, 2)
+
 produto.vender(1)
+produto.repor(8)
+
 produto.mostrarEstoque()
+produto.atualizarPreco(121.11)
+
 console.log(produto)
