@@ -37,8 +37,13 @@ class Produto {
     repor(qtd) {
         this.quantidade += qtd;
     }
+
+    mostrarEstoque() {
+        console.log(`O produto '${this.nome}' possui ${this.quantidade} unidades disponíveis`)
+    }
 }
 
 let produto = new Produto('TV', 100.00, 2)
 produto.vender(1)
+produto.mostrarEstoque()
 console.log(produto)
