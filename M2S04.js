@@ -16,7 +16,11 @@ let pares = numeros.filter((element) => {
 
 
 
-//Card03
+//Card03 - map()
+
+
+
+//Card04 - Classe Produto
 class Produto {
     constructor(nome, preco, quantidade) {
         this.nome = nome,
@@ -28,6 +32,10 @@ class Produto {
         if(this.quantidade >= qtd) {
             this.quantidade -= qtd;
         } else {console.log('Estoque insuficiente.')}
+    }
+
+    repor(qtd) {
+        this.quantidade += qtd;
     }
 }
 
