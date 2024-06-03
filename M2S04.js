@@ -17,3 +17,11 @@ let pares = numeros.filter((element) => {
 
 
 //Card03
+class Produto {
+    constructor(nome, preco, quantidade) {
+        this.nome = nome,
+        this.preco = preco,
+        this.quantidade = quantidade;
+    }
+    
+}
